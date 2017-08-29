@@ -1,0 +1,10 @@
+/*入口模块*/
+requirejs.config({
+	paths:{
+		 "jquery":"libs/jquery-1.8.3.min"
+	}
+})
+require(["output","jquery"],function(mod,$){
+	mod.a("djsg")
+	console.log($)
+})
